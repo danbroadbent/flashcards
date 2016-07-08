@@ -6,7 +6,7 @@ class Guess
   end
 
   def correct?
-    @response == card.answer
+    @response.upcase == card.answer.upcase
   end
 
   def feedback

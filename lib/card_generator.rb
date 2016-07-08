@@ -1,7 +1,9 @@
 class CardGenerator
+
   def initialize(filename)
     @filename = filename
   end
+
   def cards
     cards = IO.readlines(@filename)
     separated_cards = cards.map do |card|

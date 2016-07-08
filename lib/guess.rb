@@ -4,9 +4,11 @@ class Guess
     @response = response
     @card = card
   end
+
   def correct?
     @response == card.answer
   end
+
   def feedback
     if correct? == true
       return "Correct!"
